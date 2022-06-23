@@ -31,7 +31,7 @@ SECRET_KEY = env.str('SECRET_KEY', default='no-secret-key')
 DEBUG = env.bool('DEBUG', default=False)
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['*'])
-DOMAIN = env.str('DOMAIN')
+DOMAIN = env.str('DOMAIN', default='localhost')
 
 # Application definition
 DJANGO_APPS = [
